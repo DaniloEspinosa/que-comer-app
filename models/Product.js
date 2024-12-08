@@ -8,7 +8,7 @@ const ProductSchema = Schema(
     name: String,
     imgUrl: String,
     description: String,
-    category: {type: String, enum: ['desayuno', 'almuerzo', 'merienda', 'cena']},
+    category: {type: String, enum: ['desayuno', 'almuerzo', 'merienda', 'cena', 'otro']},
   },
   {
     timestamps: true

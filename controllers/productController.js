@@ -4,11 +4,11 @@ const mongoose = require("mongoose");
 // ---------------------------------- AGREGAR UN PRODUCTO
 async function addProduct(req, res) {
   try {
-    const { name, type, description } = req.body;
+    const { name, category, description } = req.body;
 
     const product = Product({
       name,
-      type,
+      category,
       description,
     });
 
